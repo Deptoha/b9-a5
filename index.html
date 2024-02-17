@@ -5,16 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
+
+    <!-- styles link  -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font  -->
+
 </head>
 
-<body>
+<body class="mx-w-[1075px] m-auto">
     <!-- header  -->
-    <header>
+    <header class="md:container md:mx-auto">
+        <!-- nav bar -->
+        <nav class="mb-7">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-base rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class=" text-black font-extrabold text-xl lg:text-4xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal text-base lg:pr-[400px] px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-magnifying-glass mr-9 md:inline hidden"></i>
 
+                    <button
+                        class=" gap-2  flex font-extrabold text-[20px] w-
+                        [90px] h-10 px-4 rounded-lg items-center justify-center text-[#1dd100] text-center bg-green-100">Bus
+                        <span class="w-5 h-4"><img src="images/bus-icon.png" alt=""></span>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+        <!-- banner section  -->
+        <div class="hero lg:min-h-screen" style="background-image: url(./images/banner.png);">
+            <div class=" "></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class=" lg:space-y-9">
+                    <h1 class=" text-white text-5xl font-extrabold">End-to-End Travel with <br> <span
+                            class="text-[#1dd100]">P Paribahan</span></h1>
+                    <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                        excepturi exercitationem quasi. <br> In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="w-36 text-base font-bold h-16 rounded-md text-black bg-[#1dd100]">Buy
+                        Tickets</button>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- main  -->
-    <main>
+    <main class="md:container md:mx-auto">
+        <section class="mt-8 mb-16">
+            <h3 class=" text-black text-4xl font-bold text-center mb-4">Best offers for you</h3>
 
+            <div class="lg:flex  justify-center lg:gap-12">
+                <div
+                    class="flex gap-36 h-40 px-8 mb-7 bg-[#FFBF0F] rounded-2xl items-center justify-center w-auto bg-base-100 shadow-xl">
+                    <div class="space-y-2">
+                        <p class=" text-3xl font-extrabold">15% OFF</p>
+                        <p class="font-bold text-base">on your next purchase</p>
+                        <p class="font-semibold text-sm text-gray-500">use by January 2024</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-2xl font-bold">NEW15</p>
+                        <p class="font-semibold text-sm text-gray-500">Coupon Code</p>
+                    </div>
+                </div>
+                <div
+                    class="flex gap-36 h-40 px-8 bg-[#F78C9C] rounded-2xl items-center justify-center w-auto bg-base-100 shadow-xl">
+                    <div class="space-y-2">
+                        <p class=" text-3xl font-extrabold">20% OFF</p>
+                        <p class="font-bold text-base">on your next purchase</p>
+                        <p class="font-semibold text-sm text-gray-500">use by January 2024</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-2xl font-bold">Couple 20</p>
+                        <p class="font-semibold text-sm text-gray-500">Coupon Code</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" text-center">
+                <button class="btn border-[#1dd100] text-[#1dd100] bg-white">See All Offers</button>
+            </div>
+        </section>
     </main>
     <!-- footer  -->
     <footer>
