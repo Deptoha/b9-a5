@@ -69,7 +69,7 @@
                             class="text-[#1dd100]">P Paribahan</span></h1>
                     <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
                         excepturi exercitationem quasi. <br> In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="w-36 text-base font-bold h-16 rounded-md text-black bg-[#1dd100]">Buy
+                    <button id="scroll" class="w-36 text-base font-bold h-16 rounded-md text-black bg-[#1dd100]">Buy
                         Tickets</button>
                 </div>
             </div>
@@ -124,7 +124,7 @@
 
         <!-- P.H Paribahan -->
 
-        <section class="border-t-2 border-[#1dd100] rounded-t-[80px] bg-[#F7F8F8] pb-24">
+        <section id="home-screen" class=" border-t-2 border-[#1dd100] rounded-t-[80px] bg-[#F7F8F8] pb-24">
 
             <!-- p.h paribahan  -->
 
@@ -159,7 +159,7 @@
                             <div class="flex h-[40px] w-[125px] rounded-md py-[5px] bg-green-100 mt-5 ml-20">
                                 <div><img src="images/seat-green.png" alt=""></div>
                                 <div>
-                                    <p class="text-[#1dd100]">40 Seats left</p>
+                                    <p class="text-[#1dd100]">12 Seats left</p>
                                 </div>
                             </div>
 
@@ -318,8 +318,7 @@
 
                             <label class="input mt-2 mx-3 bg-gray-100 flex items-center gap-2">
                                 <input type="text" class="grow" placeholder="Have any copupon?" />
-                                <button
-                                    class=" w-[75px] h-9 text-white text-base pb-1 font-semibold rounded-lg bg-[#1dd100] ">Apply</button>
+                                <button onclick="done()" class=" w-[75px] h-9 text-white text-base pb-1 font-semibold rounded-lg bg-[#1dd100] ">Apply</button>
                             </label>
 
                             <div class="flex gap-24 justify-between">
@@ -335,6 +334,23 @@
 
         </section>
 
+        <!-- SUCCESS  section -->
+
+        <section id="success" class=" flex justify-center mb-14 hidden">
+            <div class="bg-gray-200 rounded-lg text-center w-[670px] h-[320px]">
+                <div class="mt-5 ml-72 mb-3"><img class="w-[68px] " src="images/success.png" alt=""></div>
+                <div class=" text-[#1dd100] text-2xl font-bold mb-2">SUCCESS</div>
+                <div>
+                    <p class="text-xl font-medium mb-3">Thank you for Booking Our Bus Seats. <br>
+                        We are working hard to find the best service and deals for you.
+                    </p>
+                    <p class="text-xl font-light mb-3">Shortly you will find a confirmation in your email.</p>
+                </div>
+                <div>
+                    <button id="scroll" class="w-[185px] text-base font-bold h-[42px] rounded-3xl text-black bg-[#1dd100]">Continue</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer  -->
@@ -373,7 +389,8 @@
             </div>
         </nav>
     </footer>
-<script src="js/scroll.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/Success.js"></script>
 </body>
 
 </html>
