@@ -17,7 +17,7 @@
 
 <body class="mx-w-[1075px] m-auto">
     <!-- header  -->
-    <header class="md:container md:mx-auto">
+    <header id="header-hidden" class="lg:max-w-[1300px] w-auto md:mx-auto">
         <!-- nav bar -->
         <nav class="mb-7">
             <div class="navbar bg-base-100">
@@ -61,14 +61,13 @@
             </div>
         </nav>
         <!-- banner section  -->
-        <div class="hero lg:min-h-screen" style="background-image: url(./images/banner.png);">
+        <div class="hero h-[600px] rounded-3xl" style="background-image: url(./images/banner.png);">
             <div class=" "></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class=" lg:space-y-9">
                     <h1 class=" text-white text-5xl font-extrabold">End-to-End Travel with <br> <span
                             class="text-[#1dd100]">P Paribahan</span></h1>
-                    <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-                        excepturi exercitationem quasi. <br> In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <p class="mb-5 text-white">"Experience the Ultimate Voyage: Luxury Travel Bus Tours Await! Discover Scenic Routes, Comfortable <br> Seating, and Expert Guides for Your Dream Adventure."</p>
                     <button id="scroll" class="w-36 text-base font-bold h-16 rounded-md text-black bg-[#1dd100]">Buy
                         Tickets</button>
                 </div>
@@ -77,19 +76,19 @@
     </header>
     <!-- main  -->
 
-    <main class="md:container md:mx-auto">
+    <main id="home-screen" class="md:container md:mx-auto">
 
         <!-- Best offers for you -->
 
         <section class="mt-8 mb-16">
-            <h3 class=" text-black text-4xl font-bold text-center mb-4">Best offers for you</h3>
+            <h3 class=" text-black text-4xl font-bold text-center mb-16">Best offers for you</h3>
 
             <div class="lg:flex  justify-center lg:gap-12">
                 <div
-                    class="flex gap-32 h-40 px-8 mb-7 bg-[#FFBF0F] rounded-2xl items-center justify-center w-auto bg-base-100 shadow-xl">
-                    <div class="space-y-2">
-                        <p class=" text-3xl font-extrabold">15% OFF</p>
-                        <p class="font-bold text-base">on your next purchase</p>
+                    class="flex gap-32 lg:h-40 px-8 mb-7 bg-[#FFBF0F] rounded-2xl items-center justify-center w-auto bg-base-100 shadow-xl">
+                    <div class="=lg:space-y-2 ">
+                        <p class=" lg:text-3xl lg:font-extrabold">15% OFF</p>
+                        <p class="lg:font-bold lg:text-base">on your next purchase</p>
                         <p class="font-semibold text-sm text-gray-500">use by January 2024</p>
                     </div>
                     <div>
@@ -101,10 +100,10 @@
                     </div>
                 </div>
                 <div
-                    class="flex gap-36 h-40 px-8 bg-[#F78C9C] rounded-2xl items-center justify-center w-auto bg-base-100 shadow-xl">
-                    <div class="space-y-2">
-                        <p class=" text-3xl font-extrabold">20% OFF</p>
-                        <p class="font-bold text-base">on your next purchase</p>
+                    class="flex gap-32 lg:h-40 px-8 bg-[#F78C9C] rounded-2xl items-center justify-center w-auto bg-base-100 shadow-xl">
+                    <div class="lg:space-y-2">
+                        <p class=" lg:text-3xl lg:font-extrabold">20% OFF</p>
+                        <p class="lg:font-bold lg:text-base">on your next purchase</p>
                         <p class="font-semibold text-sm text-gray-500">use by January 2024</p>
                     </div>
                     <div>
@@ -118,35 +117,33 @@
 
             </div>
             <div class=" text-center">
-                <button class="btn border-[#1dd100] text-[#1dd100] bg-white">See All Offers</button>
+                <button class="btn border-[#1dd100] text-[#1dd100] bg-white lg:mt-0 mt-8 mr-8">See All Offers</button>
             </div>
         </section>
 
         <!-- P.H Paribahan -->
 
-        <section id="home-screen" class=" border-t-2 border-[#1dd100] rounded-t-[80px] bg-[#F7F8F8] pb-24">
+        <section class=" border-t-2 border-[#1dd100] rounded-t-[80px] bg-[#F7F8F8] pb-24">
 
             <!-- p.h paribahan  -->
 
             <div class="text-center space-y-4 mt-24">
                 <h3 class="text-4xl font-bold">P.H Paribahan</h3>
-                <p class="text-base font-normal text-gray-400 ">Yes, you can run unit tests and view the results
-                    directly
-                    within the app. The integrated <br> testing features allow for a streamlined .</p>
+                <p class="text-base font-normal text-gray-400 ">"Embark on an Unforgettable Journey: Discover Comfort, Convenience, and Adventure <br> on Board Our Luxury Travel Bus!"</p>
             </div>
 
             <!-- paribahan card -->
 
             <div class="lg:flex  justify-center lg:gap-12 mt-10 pb-10">
-                <div class="flex rounded-xl gap-10 w-[870px]  bg-base-100 shadow-md">
+                <div class="lg:flex rounded-xl gap-10 lg:w-[870px] w-[485px] bg-base-100 shadow-md">
 
                     <!-- Greenline Paribahan -->
 
                     <div>
                         <div class="flex">
-                            <div class="flex gap-4 mt-5 pl-6">
+                            <div class="flex gap-4 mt-5 lg:pl-6">
                                 <div>
-                                    <img src="images/bus-logo.png" alt="">
+                                    <img class="ml-2" src="images/bus-logo.png" alt="">
                                 </div>
                                 <div>
                                     <h3 class="text-2xl font-bold">Greenline Paribahan</h3>
@@ -156,10 +153,12 @@
 
                             <!-- 40 seat left -->
 
-                            <div class="flex h-[40px] w-[125px] rounded-md py-[5px] bg-green-100 mt-5 ml-20">
-                                <div><img src="images/seat-green.png" alt=""></div>
+                            <div
+                                class="flex h-[45px] w-[130px] pt-2 rounded-md py-[5px] bg-green-100 mt-5 ml-5 lg:ml-20">
+                                <div><img class="ml-1" src="images/seat-green.png" alt=""></div>
                                 <div>
-                                    <p class="text-[#1dd100]">12 Seats left</p>
+                                    <p class="text-[#1dd100] text-base font-medium"><span id="seat-left"
+                                            class="pl-1">12</span> Seats left</p>
                                 </div>
                             </div>
 
@@ -167,7 +166,7 @@
 
                         <!--  -->
 
-                        <div class="bg-[#F7F8F8] mt-5  ml-10 rounded-lg w-[510px] h-[195px]">
+                        <div class="bg-[#F7F8F8] mt-5  lg:ml-10 rounded-lg lg:w-[510px] w-[480px] lg:h-[195px]">
                             <div class="flex justify-between py-3 px-5">
                                 <div>Route</div>
                                 <div>Dhaka - Sylhet</div>
@@ -179,9 +178,12 @@
                             </div>
 
                             <div class="flex justify-between px-5">
-                                <div class="bg-gray-200 rounded-lg w-[124px] px-2">Boarding Point - Laxmipur</div>
-                                <div class="bg-gray-200 rounded-lg w-[124px] px-2">Dropping Point - Bogura</div>
-                                <div class="bg-gray-200 rounded-lg w-[124px] px-2">Est. Time - 11 Hour</div>
+                                <div class="bg-gray-200 rounded-lg w-[124px] lg:mb-0 mb-3 px-2">Boarding Point -
+                                    Laxmipur</div>
+                                <div class="bg-gray-200 rounded-lg w-[124px] lg:mb-0 mb-3 px-2">Dropping Point - Bogura
+                                </div>
+                                <div class="bg-gray-200 rounded-lg w-[124px] lg:mb-0 mb-3 px-2">Est. Time - 11 Hour
+                                </div>
                             </div>
                         </div>
 
@@ -189,15 +191,16 @@
 
                     <!-- image divider -->
 
-                    <div>
-                        <img class="h-[312px] " src="images/info-devider.png" alt="">
+                    <div class="">
+                        <img class="lg:h-[312px] h-[200px] mt-6 lg:mt-0 lg:ml-0 ml-52 " src="images/info-devider.png"
+                            alt="">
                     </div>
 
                     <!-- 550 take  -->
 
-                    <div class=" justify-center items-center py-[95px]">
+                    <div class=" justify-center items-center lg:py-[95px] lg:ml-0 ml-52 mt-4">
                         <img class="w-[30px] h-[31px]" src="images/fare.png" alt="">
-                        <h3 class="text-2xl font-bold">550 Taka</h3>
+                        <h3 class="text-2xl font-bold ">550 Taka</h3>
                         <p class=" text-base text-gray-400 font-medium">Per Seat</p>
                     </div>
                 </div>
@@ -206,11 +209,11 @@
             <!-- Select Your Seat -->
 
             <div class=" lg:flex justify-center ">
-                <div class=" flex justify-between bg-base-100 shadow-md rounded-xl w-[886px]">
+                <div class=" lg:flex justify-between bg-base-100 shadow-md rounded-xl lg:w-[886px]">
                     <div class="mb-5">
                         <div>
                             <div>
-                                <h3 class="text-xl font-semibold mt-5 ml-9">Select Your Seat</h3>
+                                <h3 class="text-xl font-semibold mt-5 lg:ml-9 ml-5">Select Your Seat</h3>
                             </div>
 
                             <div class=" mt-3 rounded-lg w-[510px] ">
@@ -219,7 +222,7 @@
                                         <img src="images/seat-gray.png" alt="">
                                         <div class="text-gray-400">Available</div>
                                     </div>
-                                    <div class="flex gap-3">
+                                    <div class="flex gap-3 lg:mr-0 mr-7">
                                         <img src="images/seat-green-filled.png" alt="">
                                         <div class="text-[#1dd100] mr-5">Selected</div>
                                     </div>
@@ -240,28 +243,36 @@
                                 <div>
                                     <div class="flex gap-5 pt-4">
                                         <div class="pt-2 pl-9">A</div>
-                                        <button onclick="A1()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A1</button>
-                                        <button onclick="A2()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A2</button>
+                                        <button id="button1" onclick="A1()"
+                                            class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A1</button>
+                                        <button id="button2" onclick="A2()"
+                                            class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A2</button>
                                     </div>
                                 </div>
 
                                 <div class="flex gap-5 pt-4">
-                                    <button onclick="A3()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A3</button>
-                                    <button onclick="A4()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A4</button>
+                                    <button id="button3" onclick="A3()"
+                                        class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A3</button>
+                                    <button id="button4" onclick="A4()"
+                                        class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A4</button>
                                 </div>
                             </div>
                             <div class="flex justify-between">
                                 <div>
                                     <div class="flex gap-5 pt-4">
                                         <div class="pt-2 pl-9">B</div>
-                                        <button onclick="B1()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B1</button>
-                                        <button onclick="B2()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B2</button>
+                                        <button id="button5" onclick="B1()"
+                                            class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B1</button>
+                                        <button id="button6" onclick="B2()"
+                                            class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B2</button>
                                     </div>
                                 </div>
 
                                 <div class="flex gap-5 pt-4">
-                                    <button onclick="B3()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B3</button>
-                                    <div onclick="B4()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2"><button>B4</button>
+                                    <button id="button7" onclick="B3()"
+                                        class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B3</button>
+                                    <div id="button8" onclick="B4()"
+                                        class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2"><button>B4</button>
                                     </div>
                                 </div>
                             </div>
@@ -287,19 +298,20 @@
 
                     <div class="">
                         <div class="mt-5">
-                            <h3 class="text-xl font-semibold">Select Your Seat</h3>
+                            <h3 class="text-xl font-semibold lg:ml-0 ml-4">Select Your Seat</h3>
                         </div>
 
-                        <div class="bg-gray-200 rounded-lg mt-4 w-[] h-auto mb-[20px] mr-[22px]">
+                        <div class="bg-gray-200 rounded-lg mt-4 h-auto mb-[20px] lg:mr-[22px]">
 
                             <div class="overflow-x-auto">
                                 <table class="table">
                                     <!-- head -->
                                     <thead>
                                         <tr>
-                                            <th>Seat <span class="bg-[#1dd100]">4</span></th>
-                                            <th>Class</th>
-                                            <th>Price</th>
+                                            <th class="text-base font-medium text-black">Seat <span id="selected-seat"
+                                                    class="bg-[#1dd100]">0</span></th>
+                                            <th class="text-base font-medium text-black">Class</th>
+                                            <th class="text-base font-medium text-black">Price</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -356,8 +368,9 @@
                                         </tr>
 
                                         <tr>
-                                            <td>Total Price</td>
-                                            <td colspan="2" style="text-align: right;">BDT 1100</td>
+                                            <td class="text-base font-medium text-black">Total Price</td>
+                                            <td class="text-base font-medium text-black" colspan="2"
+                                                style="text-align: right;">BDT <span id="total-price">0</span></td>
                                         </tr>
 
                                     </tbody>
@@ -365,19 +378,19 @@
 
                                 </table>
                                 <label class="input mt-2 mx-3 bg-gray-100 flex items-center gap-2">
-                                    <input type="text" class="grow" placeholder="Have any copupon?" />
+                                    <input type="text" class="grow" placeholder="Have any coupon?" />
                                     <button
                                         class=" w-[75px] h-9 text-white text-base pb-1 font-semibold rounded-lg bg-[#1dd100] ">Apply</button>
                                 </label>
 
                                 <div class="flex justify-between px-4 pt-4">
-                                    <p>Grand Total</p>
-                                    <p>BDT 1100</p>
+                                    <p class="text-base font-medium text-black">Grand Total</p>
+                                    <p class="text-base font-medium text-black">BDT 1100</p>
                                 </div>
 
                                 <div>
                                     <button onclick="done()"
-                                        class="w-[334px] text-base font-bold h-[48px] rounded-lg ml-[10px] mr-[10px] mt-[20px] mb-5 text-black bg-[#1dd100]">Next</button>
+                                        class="w-[334px] text-base font-bold h-[48px] rounded-lg lg:ml-[10px] ml-[75px]  lg:mr-[10px] mt-[20px] mb-5 text-black bg-[#1dd100]">Next</button>
                                 </div>
                             </div>
 
@@ -390,31 +403,12 @@
             </div>
 
         </section>
-        
 
-        <!-- SUCCESS  section -->
-
-        <section id="success" class=" flex justify-center mb-14 hidden">
-            <div class="bg-gray-200 rounded-lg text-center w-[670px] h-[320px]">
-                <div class="mt-5 ml-72 mb-3"><img class="w-[68px] " src="images/success.png" alt=""></div>
-                <div class=" text-[#1dd100] text-2xl font-bold mb-2">SUCCESS</div>
-                <div>
-                    <p class="text-xl font-medium mb-3">Thank you for Booking Our Bus Seats. <br>
-                        We are working hard to find the best service and deals for you.
-                    </p>
-                    <p class="text-xl font-light mb-3">Shortly you will find a confirmation in your email.</p>
-                </div>
-                <div>
-                    <button id="scroll"
-                        class="w-[185px] text-base font-bold h-[42px] rounded-3xl text-black bg-[#1dd100]">Continue</button>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- footer  -->
 
-    <footer class="footer p-10 bg-neutral text-neutral-content md:container md:mx-auto">
+    <!-- <footer id="footer-hidden" class="footer p-10 bg-neutral text-neutral-content md:container md:mx-auto">
         <aside>
             <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
                 clip-rule="evenodd" class="fill-current">
@@ -447,10 +441,35 @@
                     </svg></a>
             </div>
         </nav>
-    </footer>
+    </footer> -->
+
+    <!-- success section  -->
+
+    <section id="success" class="mt-48 flex justify-center mb-14 hidden">
+        <div class="bg-gray-200 rounded-lg text-center w-[670px] h-[320px]">
+            <div class="mt-5 ml-72 mb-3"><img class="w-[68px] " src="images/success.png" alt=""></div>
+            <div class=" text-[#1dd100] text-2xl font-bold mb-2">SUCCESS</div>
+            <div>
+                <p class="text-xl font-medium mb-3">Thank you for Booking Our Bus Seats. <br>
+                    We are working hard to find the best service and deals for you.
+                </p>
+                <p class="text-xl font-light mb-3">Shortly you will find a confirmation in your email.</p>
+            </div>
+            <div>
+                <button id="scroll"
+                    class="w-[185px] text-base font-bold h-[42px] rounded-3xl text-black bg-[#1dd100]">Continue</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- js script-  -->
+
     <script src="js/scroll.js"></script>
     <script src="js/Success.js"></script>
     <script src="js/bus.js"></script>
+    <script src="js/buttonColor.js"></script>
+    <script src="js/selected-seat.js"></script>
+
 </body>
 
 </html>
