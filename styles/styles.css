@@ -1,8 +1,14 @@
 .line {
-    height: 2px;
+    height: 0px;
     width: 315px;
     background-color: #03071233;
     margin-top: 12px;
     margin-left: 13px;
 }
+
+/* <label class="input mt-2 mx-3 bg-gray-100 flex items-center gap-2">
+                                <input type="text" class="grow" placeholder="Have any copupon?" />
+                                <button class=" w-[75px] h-9 text-white text-base pb-1 font-semibold rounded-lg bg-[#1dd100] ">Apply</button>
+                            </label> */
+
 

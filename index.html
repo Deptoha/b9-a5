@@ -240,42 +240,43 @@
                                 <div>
                                     <div class="flex gap-5 pt-4">
                                         <div class="pt-2 pl-9">A</div>
-                                        <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A1</div>
-                                        <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A2</div>
+                                        <button onclick="A1()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A1</button>
+                                        <button onclick="A2()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A2</button>
                                     </div>
                                 </div>
 
                                 <div class="flex gap-5 pt-4">
-                                    <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A3</div>
-                                    <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A4</div>
+                                    <button onclick="A3()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A3</button>
+                                    <button onclick="A4()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">A4</button>
                                 </div>
                             </div>
                             <div class="flex justify-between">
                                 <div>
                                     <div class="flex gap-5 pt-4">
                                         <div class="pt-2 pl-9">B</div>
-                                        <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B1</div>
-                                        <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B2</div>
+                                        <button onclick="B1()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B1</button>
+                                        <button onclick="B2()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B2</button>
                                     </div>
                                 </div>
 
                                 <div class="flex gap-5 pt-4">
-                                    <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B3</div>
-                                    <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B4</div>
+                                    <button onclick="B3()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">B3</button>
+                                    <div onclick="B4()" class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2"><button>B4</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex justify-between">
                                 <div>
                                     <div class="flex gap-5 pt-4">
                                         <div class="pt-2 pl-9">C</div>
-                                        <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">C1</div>
-                                        <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">C2</div>
+                                        <button class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">C1</button>
+                                        <button class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">C2</button>
                                     </div>
                                 </div>
 
                                 <div class="flex gap-5 pt-4">
-                                    <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">C3</div>
-                                    <div class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">C4</div>
+                                    <button class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">C3</button>
+                                    <button class="bg-gray-100  w-[70px] h-[42px] rounded-lg px-5 py-2">C1</button>
                                 </div>
                             </div>
                         </div>
@@ -289,50 +290,107 @@
                             <h3 class="text-xl font-semibold">Select Your Seat</h3>
                         </div>
 
-                        <div class="bg-gray-200 rounded-lg mt-4 w-[] h-[253px] mr-16">
-                            <div class="flex gap-24 justify-between">
-                                <div class="flex">
-                                    <div class="ml-4 mt-2 text-base font-bold">Seat</div>
-                                    <div class="mt-2 ml-2 bg-[#1dd100] w-[16px] h-[25px] rounded-md pl-1">2</div>
+                        <div class="bg-gray-200 rounded-lg mt-4 w-[] h-auto mb-[20px] mr-[22px]">
+
+                            <div class="overflow-x-auto">
+                                <table class="table">
+                                    <!-- head -->
+                                    <thead>
+                                        <tr>
+                                            <th>Seat <span class="bg-[#1dd100]">4</span></th>
+                                            <th>Class</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- row 1 -->
+                                        <tr id="row-1" class="hidden disabled:">
+                                            <td>A1</td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <!-- row 2 -->
+                                        <tr id="row-2" class="hidden">
+                                            <td>A2</td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <!-- row 3 -->
+                                        <tr id="row-3" class="hidden">
+                                            <td>A3</td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <!-- row 4 -->
+                                        <tr id="row-4" class="hidden">
+                                            <td>A4</td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <!-- row 5 -->
+                                        <tr id="row-5" class="hidden">
+                                            <td>B1</td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <!-- row 6 -->
+                                        <tr id="row-6" class="hidden">
+                                            <td>B2</td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <!-- row 7 -->
+                                        <tr id="row-7" class="hidden">
+                                            <td>B3</td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <!-- row 8 -->
+                                        <tr id="row-8" class="hidden">
+                                            <td>B4</td>
+                                            <td>Economoy</td>
+                                            <td>550</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="line"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Total Price</td>
+                                            <td colspan="2" style="text-align: right;">BDT 1100</td>
+                                        </tr>
+
+                                    </tbody>
+
+
+                                </table>
+                                <label class="input mt-2 mx-3 bg-gray-100 flex items-center gap-2">
+                                    <input type="text" class="grow" placeholder="Have any copupon?" />
+                                    <button
+                                        class=" w-[75px] h-9 text-white text-base pb-1 font-semibold rounded-lg bg-[#1dd100] ">Apply</button>
+                                </label>
+
+                                <div class="flex justify-between px-4 pt-4">
+                                    <p>Grand Total</p>
+                                    <p>BDT 1100</p>
                                 </div>
-                                <div class="mt-2 text-base font-bold">Class</div>
-                                <div class="mr-4 mt-2 text-base font-bold">Price</div>
-                            </div>
-                            <div class="flex gap-24 justify-between mt-4">
-                                <div class="ml-4 mt-2">C2</div>
-                                <div class="mt-2">Economoy</div>
-                                <div class="mr-4 mt-2">550</div>
-                            </div>
-                            <div class="flex gap-24 justify-between">
-                                <div class="ml-4 mt-2">C2</div>
-                                <div class="mt-2">Economoy</div>
-                                <div class="mr-4 mt-2">550</div>
-                            </div>
-                            <div class="line"></div>
 
-                            <div class="flex gap-24 justify-between">
-                                <div class="ml-4 mt-2 text-base font-bold">Total Price</div>
-
-                                <div class="mr-4 mt-2 text-base font-bold">BDT 1100</div>
+                                <div>
+                                    <button onclick="done()"
+                                        class="w-[334px] text-base font-bold h-[48px] rounded-lg ml-[10px] mr-[10px] mt-[20px] mb-5 text-black bg-[#1dd100]">Next</button>
+                                </div>
                             </div>
 
-                            <label class="input mt-2 mx-3 bg-gray-100 flex items-center gap-2">
-                                <input type="text" class="grow" placeholder="Have any copupon?" />
-                                <button onclick="done()" class=" w-[75px] h-9 text-white text-base pb-1 font-semibold rounded-lg bg-[#1dd100] ">Apply</button>
-                            </label>
 
-                            <div class="flex gap-24 justify-between">
-                                <div class="ml-4 mt-2 text-base font-bold">Grand Total</div>
-
-                                <div class="mr-4 mt-2 text-base font-bold">BDT 1100</div>
-                            </div>
                         </div>
+
                     </div>
                 </div>
 
             </div>
 
         </section>
+        
 
         <!-- SUCCESS  section -->
 
@@ -347,7 +405,8 @@
                     <p class="text-xl font-light mb-3">Shortly you will find a confirmation in your email.</p>
                 </div>
                 <div>
-                    <button id="scroll" class="w-[185px] text-base font-bold h-[42px] rounded-3xl text-black bg-[#1dd100]">Continue</button>
+                    <button id="scroll"
+                        class="w-[185px] text-base font-bold h-[42px] rounded-3xl text-black bg-[#1dd100]">Continue</button>
                 </div>
             </div>
         </section>
@@ -391,6 +450,7 @@
     </footer>
     <script src="js/scroll.js"></script>
     <script src="js/Success.js"></script>
+    <script src="js/bus.js"></script>
 </body>
 
 </html>
