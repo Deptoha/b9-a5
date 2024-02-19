@@ -377,18 +377,18 @@
 
 
                                 </table>
-                                <label class="input mt-2 mx-3 bg-gray-100 flex items-center gap-2">
-                                    <input type="text" class="grow" placeholder="Have any coupon?" />
-                                    <button
+                                <div class="input mt-2 mx-3 bg-gray-100 flex items-center gap-2">
+                                    <input id="coupon-input" type="text" class="grow" placeholder="Have any coupon?" />
+                                    <button id="button-apply"
                                         class=" w-[75px] h-9 text-white text-base pb-1 font-semibold rounded-lg bg-[#1dd100] ">Apply</button>
-                                </label>
+                                </div>
 
                                 <div class="flex justify-between px-4 pt-4">
                                     <p class="text-base font-medium text-black">Grand Total</p>
-                                    <p class="text-base font-medium text-black">BDT 1100</p>
+                                    <p class="text-base font-medium text-black">BDT <span id="price">0</span></p>
                                 </div>
 
-                                <div>
+                                <div> 
                                     <button onclick="done()"
                                         class="w-[334px] text-base font-bold h-[48px] rounded-lg lg:ml-[10px] ml-[75px]  lg:mr-[10px] mt-[20px] mb-5 text-black bg-[#1dd100]">Next</button>
                                 </div>
@@ -468,7 +468,6 @@
     <script src="js/Success.js"></script>
     <script src="js/bus.js"></script>
     <script src="js/buttonColor.js"></script>
-    <script src="js/selected-seat.js"></script>
 
 </body>
 

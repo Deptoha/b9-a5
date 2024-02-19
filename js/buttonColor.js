@@ -27,6 +27,20 @@ button1.addEventListener('click', () => {
 
     total.innerText = newTotalPrice1
 
+
+    
+    // grand total price
+
+    const discountInfo = document.getElementById('price')
+    const totalPricE = discountInfo.innerText;
+    const totalPrice12 = parseInt(totalPricE);
+    console.log(totalPrice12);
+
+    const newTotalPrice = newTotalPrice1;
+
+    discountInfo.innerText = newTotalPrice
+
+
     //  seat left
 
     const currentLeft = document.getElementById('seat-left');
@@ -68,6 +82,17 @@ button2.addEventListener('click', () => {
     const newTotalPrice1 = newSeatNumber * 550;
 
     total.innerText = newTotalPrice1
+
+    // grand total price
+
+    const discountInfo = document.getElementById('price')
+    const totalPricE = discountInfo.innerText;
+    const totalPrice12 = parseInt(totalPricE);
+    console.log(totalPrice12);
+
+    const newTotalPrice = newTotalPrice1;
+
+    discountInfo.innerText = newTotalPrice
 
 
     //  seat left
@@ -111,6 +136,17 @@ button3.addEventListener('click', () => {
 
     total.innerText = newTotalPrice1
 
+    // grand total price
+
+    const discountInfo = document.getElementById('price')
+    const totalPricE = discountInfo.innerText;
+    const totalPrice12 = parseInt(totalPricE);
+    console.log(totalPrice12);
+
+    const newTotalPrice = newTotalPrice1;
+
+    discountInfo.innerText = newTotalPrice
+
 
     //  seat left
 
@@ -151,6 +187,17 @@ button4.addEventListener('click', () => {
     const newTotalPrice1 = newSeatNumber * 550;
 
     total.innerText = newTotalPrice1
+
+    // grand total price
+
+    const discountInfo = document.getElementById('price')
+    const totalPricE = discountInfo.innerText;
+    const totalPrice12 = parseInt(totalPricE);
+    console.log(totalPrice12);
+
+    const newTotalPrice = newTotalPrice1;
+
+    discountInfo.innerText = newTotalPrice
 
 
     //  seat left
@@ -194,6 +241,17 @@ button5.addEventListener('click', () => {
 
     total.innerText = newTotalPrice1
 
+    // grand total price
+
+    const discountInfo = document.getElementById('price')
+    const totalPricE = discountInfo.innerText;
+    const totalPrice12 = parseInt(totalPricE);
+    console.log(totalPrice12);
+
+    const newTotalPrice = newTotalPrice1;
+
+    discountInfo.innerText = newTotalPrice
+
 
     //  seat left
 
@@ -235,6 +293,17 @@ button6.addEventListener('click', () => {
     const newTotalPrice1 = newSeatNumber * 550;
 
     total.innerText = newTotalPrice1
+
+    // grand total price
+
+    const discountInfo = document.getElementById('price')
+    const totalPricE = discountInfo.innerText;
+    const totalPrice12 = parseInt(totalPricE);
+    console.log(totalPrice12);
+
+    const newTotalPrice = newTotalPrice1;
+
+    discountInfo.innerText = newTotalPrice
 
 
     //  seat left
@@ -279,6 +348,17 @@ button7.addEventListener('click', () => {
 
     total.innerText = newTotalPrice1
 
+    // grand total price
+
+    const discountInfo = document.getElementById('price')
+    const totalPricE = discountInfo.innerText;
+    const totalPrice12 = parseInt(totalPricE);
+    console.log(totalPrice12);
+
+    const newTotalPrice = newTotalPrice1;
+
+    discountInfo.innerText = newTotalPrice
+
 
     //  seat left
 
@@ -320,6 +400,17 @@ button8.addEventListener('click', () => {
     const newTotalPrice1 = newSeatNumber * 550;
 
     total.innerText = newTotalPrice1
+
+    // grand total price
+
+    const discountInfo = document.getElementById('price')
+    const totalPricE = discountInfo.innerText;
+    const totalPrice12 = parseInt(totalPricE);
+    console.log(totalPrice12);
+
+    const newTotalPrice = newTotalPrice1;
+
+    discountInfo.innerText = newTotalPrice
 
 
     //  seat left
